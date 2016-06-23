@@ -7,7 +7,7 @@ Thoughts:
 2. Export to hillshade with gdaldem (http://www.gdal.org/gdaldem.html)
    - Vectorize the hillshade using the contour tool (See https://www.mapbox.com/vector-tiles/mapbox-terrain/ and https://github.com/mapbox/mapbox-gl-styles/blob/outdoors-v8/styles/outdoors-v8.json for an example of how to make compatible with existing styles)
    - Import these hillshade contours into postgres
-   - Generalize for other layers (remove vertices and perhaps in between elevations depending on density)
+   - Generalize for other layers (remove vertices and perhaps in between hillshades depending on density)
 3. Export to contours with gdal_contour (http://www.gdal.org/gdal_contour.html) (what elevation resolution?)
    - Import these contours into postgres
    - Generalize for other layers (remove vertices and perhaps in between elevations depending on density)
