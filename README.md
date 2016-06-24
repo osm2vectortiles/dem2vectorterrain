@@ -5,8 +5,8 @@ Thoughts:
 
 1. Use ASTER DEMs. Superior to SRTM and openly available (but do see their license), see http://www.digital-geography.com/dem-comparison-srtm-3-vs-aster-gdem-v2/ for a comparison.
 2. Export to hillshade with gdaldem (http://www.gdal.org/gdaldem.html)
-   - Vectorize the hillshade using the contour tool (See https://www.mapbox.com/vector-tiles/mapbox-terrain/ and https://github.com/mapbox/mapbox-gl-styles/blob/outdoors-v8/styles/outdoors-v8.json for an example of how to make compatible with existing styles)
-   - Import these hillshade contours into postgres
+   - Polygonize the hillshade using the polygonize tool - http://www.gdal.org/gdal_polygonize.html (See https://www.mapbox.com/vector-tiles/mapbox-terrain/ and https://github.com/mapbox/mapbox-gl-styles/blob/outdoors-v8/styles/outdoors-v8.json for an example of how to make compatible with existing styles)
+   - Import these hillshade polygons into postgres
    - Generalize for other layers (remove vertices and perhaps in between hillshades depending on density)
 3. Export to contours with gdal_contour (http://www.gdal.org/gdal_contour.html) (what elevation resolution?)
    - Import these contours into postgres
