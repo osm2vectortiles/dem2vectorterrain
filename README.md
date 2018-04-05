@@ -1,4 +1,7 @@
 # dem2vectorterrain
+
+> UPDATE: vector tiles made from a terrain are available at https://openmaptiles.com/contours/. The software for turning raster data into bezier curves and polygons is available as a service via https://octogeo.com/.
+
 This is an exploration of converting DEMs to vector hillshades and contours for inclusion into osm2vectortiles
 
 Thoughts:
